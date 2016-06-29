@@ -40,7 +40,7 @@ class FindRoot(object):
             if not is_a_child:
                 return node
 
-    def find_root_using_set(self):
+    def find_root_using_sets(self):
         parents, children = set(), set()
         for parent, child in self.list_of_edges:
             parents.add(parent)
@@ -62,7 +62,7 @@ class FindLeaves(object):
                   if not is_a_parent}
         return leaves
 
-    def find_leaves_using_set(self):
+    def find_leaves_using_sets(self):
         parents, children = set(), set()
         for parent, child in self.list_of_edges:
             parents.add(parent)
@@ -140,31 +140,3 @@ def _populate_children(list_of_edges):
     for parent, child in list_of_edges:
         nodes[parent].append(child)
     return nodes
-
-
-if __name__ == '__main__':
-    LIST_OF_EDGES = [('being', 'plant'),
-                     ('plant', 'flower'),
-                     ('animal', 'bird'),
-                     ('being', 'animal'),
-                     ('fish', 'salmon'),
-                     ('animal', 'human'),
-                     ('animal', 'fish')]
-    LEAVES = ['flower', 'bird', 'human', 'salmon']
-
-    FR = FindRoot(LIST_OF_EDGES)
-    assert FR.find_root_using_dict() == 'being'
-    assert FR.find_root_using_set() == 'being'
-
-    FL = FindLeaves(LIST_OF_EDGES)
-    assert FL.find_leaves_using_dict() == set(LEAVES)
-    assert FL.find_leaves_using_set() == set(LEAVES)
-
-    TP = TreePrinter(LIST_OF_EDGES)
-    assert TP.get_leaves(TP.find_root()) == LEAVES
-    print '**********depth-first traversal**********'
-    TP.print_dfs()
-    print '**********breadth-first traversal, NOT storing level**********'
-    TP.print_level_order()
-    print '**********breadth-first traversal, storing level**********'
-    TP.print_level_order_storing_level()
