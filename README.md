@@ -2,14 +2,11 @@ Topics
 ----
 * Trees
   * Binary Tree
-  * Binary Search Tree
+  * Binary Search Trees
   * Self-balancing BSTs and TreeMap
   * Heaps
   * Prefix Trees
-  * Ternary Search Trees
   * Disjoint Sets and Union Find
-  * Segment Tree and Binary Index Trees
-  * Misc Topics: Treaps, N-ary Trees, Threaded Binary Trees
 
 * Linear Data Structures
   * Arrays
@@ -37,8 +34,9 @@ Topics
 
 * Strings
   * Ascii vs Unicode
-  * String Searching: Robin-Karp and KMP
-  * Palindrom-related
+  * String Matching: Robin-Karp and KMP
+  * Ternary Search Trees
+  * Suffix Arrays
 
 * Algorithmic Paradigms
   * Divide and Conquer
@@ -51,8 +49,24 @@ Topics
   * Two Pointer
   * Bit Manipulation
 
+* Advanced Topics in Trees
+  * Treaps
+  * Skip Lists
+  * Segment Tree and Binary Indexed Trees
+  * Threaded Binary Trees
+  * Fibonacci Heaps
+  * Binomial Heaps
+  * Cartesian Trees
+  * Order-static Trees
+  * Interval Trees
+  * K-D Trees
+
 * Advanced Topics
-  * Space-Complexity
   * NP-complete Problems
-  * Randomized Algorithms
   * Approximate Algorithms
+  * Randomized Algorithms
+
+* Other Types of Problems
+  * Medians and Order Statistics
+  * Palindrome-related
+  * Game Theory
