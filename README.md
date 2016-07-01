@@ -5,7 +5,6 @@ Topics
   * Binary Search Trees
   * Self-balancing BSTs and TreeMap
   * Heaps
-  * Prefix Trees
   * Disjoint Sets and Union Find
 
 * Linear Data Structures
@@ -34,6 +33,7 @@ Topics
 
 * Strings
   * Ascii vs Unicode
+  * Prefix Trees
   * String Matching: Robin-Karp and KMP
   * Ternary Search Trees
   * Suffix Arrays
