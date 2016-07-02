@@ -1,6 +1,6 @@
 import unittest
 
-from ...src.Trees import binary_tree
+from InterviewProblems.Problems.src.Trees import binary_tree
 
 
 THREE = binary_tree.BinaryTreeNode(3)
@@ -16,7 +16,7 @@ THREE.left = TWO
 THREE.right = FIVE
 
 
-class BinaryTreeNodeTestCase(unittest.TestCase):
+class BinaryTreeTestCase(unittest.TestCase):
     def setUp(self):
         self.tree = binary_tree.BinaryTree(THREE)
 

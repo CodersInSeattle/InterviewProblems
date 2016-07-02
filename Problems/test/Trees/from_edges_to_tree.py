@@ -1,6 +1,6 @@
 import unittest
 
-from ...src.Trees import from_edges_to_tree
+from InterviewProblems.Problems.src.Trees import from_edges_to_tree
 
 
 LIST_OF_EDGES = [('being', 'plant'),

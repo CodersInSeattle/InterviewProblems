@@ -20,10 +20,12 @@ class BinarySearchTreeNode(binary_tree.BinaryTreeNode):
     def lowest_common_ancestor(self, small, big):
         if small.val <= self.val <= big.val:
             return self
-        elif self.val > big.val:
-            return self.lowest_common_ancestor(self.left, small, big)
+        elif self.val > big.val and self.left:
+            return self.left.lowest_common_ancestor(small, big)
+        elif self.val < big.val and self.right:
+            return self.right.lowest_common_ancestor(small, big)
         else:
-            return self.lowest_common_ancestor(self.right, small, big)
+            return None
 
     def search_closest(self, target):
         if self.right and self.val < target:
