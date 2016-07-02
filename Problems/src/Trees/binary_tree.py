@@ -128,6 +128,6 @@ class BinaryTree(object):
         return result
 
     @staticmethod
-    def _should_update(n):
-        random_int = random.randint(1, n)
+    def _should_update(count):
+        random_int = random.randint(1, count)
         return random_int == 1
