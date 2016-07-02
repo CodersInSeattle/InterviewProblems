@@ -17,13 +17,13 @@ class BinarySearchTreeNode(binary_tree.BinaryTreeNode):
             current = current.right
         return current
 
-    def lowest_common_ancestor(self, small_node, big_node):
-        if small_node.val <= self.val <= big_node.val:
+    def lowest_common_ancestor(self, small, big):
+        if small.val <= self.val <= big.val:
             return self
-        elif self.val > big_node.val:
-            return self.lowest_common_ancestor(self.left, small_node, big_node)
+        elif self.val > big.val:
+            return self.lowest_common_ancestor(self.left, small, big)
         else:
-            return self.lowest_common_ancestor(self.right, small_node, big_node)
+            return self.lowest_common_ancestor(self.right, small, big)
 
     def search_closest(self, target):
         if self.right and self.val < target:
@@ -78,6 +78,20 @@ class BinarySearchTreeNode(binary_tree.BinaryTreeNode):
         else:
             return (None, None)
 
+    def smallest_node_at_least(self, threshold):
+        if threshold == self.val:
+            return self
+        elif threshold < self.val:
+            if self.left and threshold <= self.left.val:
+                return self.left.smallest_node_at_least(threshold)
+            else:
+                return self
+        else:
+            if self.right:
+                return self.right.smallest_node_at_least(threshold)
+            else:
+                return None
+
 
 class BinarySearchTree(binary_tree.BinaryTree):
     def __init__(self, root):
@@ -99,7 +113,12 @@ class BinarySearchTree(binary_tree.BinaryTree):
         return self.root.get_rightmost()
 
     def nodes_in_range(self, low, high):
-        pass
+        current = self.root.smallest_node_at_least(low)
+        result = []
+        while current.val <= high:
+            result.append(current)
+            current = current.get_succ()
+        return result
 
     def lowest_common_ancestor(self, node1, node2):
         if node1.val > node2.val:
