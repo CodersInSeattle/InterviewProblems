@@ -5,7 +5,6 @@ SelectionSort
 InsertionSort
 ----
   * binary insertion sort
-  * library insertion sort
   * Shell Sort
   * insertion sort advanced analysis (https://www.hackerrank.com/challenges/insertion-sort)
 
@@ -27,6 +26,10 @@ Bucket Sort
 
 Radix Sort
 ----
+
+Cartesian Tree Sort
+----
+
 
 Other Problems
 ----
