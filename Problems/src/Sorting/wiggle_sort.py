@@ -7,7 +7,7 @@ For example, given nums = [3, 5, 2, 1, 6, 4], one possible answer is
 """
 
 
-def wiggle_sort(nums):
+def wiggle_sort_nlogn(nums):
     """
     :type nums: List[int]
     :rtype: void Do not return anything, modify nums in-place instead.
