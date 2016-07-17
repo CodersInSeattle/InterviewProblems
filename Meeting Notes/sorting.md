@@ -23,6 +23,7 @@ Other Sorting Algorithms
 
 Other Problems
 ----
+  * Minimum Scalar Product
   * Wiggle Sort
 
 Exercises
