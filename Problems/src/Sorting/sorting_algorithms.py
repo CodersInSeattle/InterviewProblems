@@ -10,7 +10,7 @@ def counting_sort(nums, upper_bound):
         start += count
 
 
-def shellSort(array):
+def shell_sort(array):
     gap = len(array) / 2
     while gap > 0:
         insertion_sort(array, gap)
@@ -39,8 +39,3 @@ def _min_index_starting_at(array, begin):
         if array[i] < min_val:
             min_index, min_val = i, array[i]
     return min_index
-
-
-if __name__ == '__main__':
-    l = [2, 2, 1, 1, 2, 0, 0, 2, 0]
-    print counting_sort(l, 3)
