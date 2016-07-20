@@ -1,3 +1,6 @@
+Minimum Scalar Product
+----
+
 Selection Sort
 ----
   * Pancake Sort
@@ -6,6 +9,7 @@ Insertion Sort
 ----
   * binary insertion sort
   * Count the number of times Insertion Sort shifts each elements when sorting an array
+  * Shell Sort
 
 QuickSort
 ----
@@ -14,21 +18,19 @@ QuickSort
 MergeSort
 ----
   * Number of Inversions
+  * In-place MergeSort
+  * Fuzzy Sorting of Intervals (https://alw231.github.io/odd-bits/2015/09/05/fuzzy-sorting-of-intervals/)
 
-Other Sorting Algorithms
+QuickSort
 ----
-  * Shell Sort
-  * Counting Sort
-  * Cartesian Tree Sort
-
-Other Problems
-----
-  * Minimum Scalar Product
+  * QuickSelect
   * Wiggle Sort
 
-Exercises
+Counting Sort
 ----
-* fuzzy sorting of intervals (https://alw231.github.io/odd-bits/2015/09/05/fuzzy-sorting-of-intervals/)
-* Bucket Sort
-* Radix Sort
-* In-place MergeSort
+  * Bucket Sort
+  * Radix Sort
+
+Heap Sort
+---
+  * Cartesian Tree Sort
