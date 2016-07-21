@@ -8,10 +8,12 @@ which returns the number of values less than or equal to `x` (not including `x` 
   * Given an array `A` of `n` distinct integers, design an algorithm to find a local minimum: an index `i` such that `A[i-1] < A[i] < A[i+1]`.
   * Given an `n * n` matrix `A` of `n^2` numbers, find a pair `(i, j)` such that `A[i][j] < A[i+1][j]`, `A[i][j] < A[i][j+1]`, `A[i][j] < A[i-1][j]`, and `A[i][j] < A[i][j-1]`.
 
-3. Given an array `A`, find the maximum `j-i` such that `A[j] > A[i]`.
+3.  
+  * [Distance Maximizing] Given an array `A`, find the maximum `j - i` such that `A[j] > A[i]`.
+  * [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) Given an array `A`, find the maximum `A[j] - A[i]` such that `j > i`.
 
 4. [Absolute Element Sums](https://www.hackerrank.com/challenges/playing-with-numbers)
 
-5. Searching in Compact Lists [CLRS 250]
+5. [Searching in Compact Lists] [CLRS 250]
 
 6. [Leetcode 29] [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)
