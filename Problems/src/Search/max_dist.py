@@ -33,8 +33,7 @@ def _find_possible_left_indices(nums):
 def _find_possible_right_indices(nums):
     current_max = None
     result_reversed = []
-    for j in xrange(len(nums)-1, -1, -1):
-        num = nums[j]
+    for j, num in reversed(list(enumerate(nums))):
         if num > current_max:
             result_reversed.append(j)
             current_max = num
