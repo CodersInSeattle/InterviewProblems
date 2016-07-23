@@ -5,10 +5,12 @@ Implement the data structures and algorithms to support these operations. That i
 which returns the number of values less than or equal to `x` (not including `x` itself).
 
 2.  Given an array `A` of `n` distinct integers, design an algorithm to find a local minimum: an index `i` such that `A[i-1] < A[i] < A[i+1]`.
+
 3. Given an `n * n` matrix `A` of `n^2` numbers, find a pair `(i, j)` such that `A[i][j] < A[i+1][j]`, `A[i][j] < A[i][j+1]`, `A[i][j] < A[i-1][j]`, and `A[i][j] < A[i][j-1]`.
 
-4. [Distance Maximizing] Given an array `A`, find the maximum `j - i` such that `A[j] > A[i]`.
-5. [[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)] Given an array `A`, find the maximum `A[j] - A[i]` such that `j > i`.
+4. [[Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)] Given an array `A`, find the maximum `A[j] - A[i]` such that `j > i`.
+
+5. [Distance Maximizing] Given an array `A`, find the maximum `j - i` such that `A[j] > A[i]`.
 
 6. [Sparse Search] Given a sorted array of strings that is interspersed with empty strings, write a function to find the location of a given string.
 
