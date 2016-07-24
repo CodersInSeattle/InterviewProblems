@@ -1,3 +1,10 @@
+"""
+Given a matrix M of size X*Y, filled with integers.
+Rows and columns of the matrix are sorted in ascending order.
+Find the number of zeros in the matrix.
+"""
+
+
 def count_zeros(matrix):
     row_idx, col_idx = 0, len(matrix[0])-1
     result = 0
