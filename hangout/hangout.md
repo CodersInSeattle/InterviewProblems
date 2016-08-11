@@ -8,13 +8,13 @@ Our hangout video conferences were recorded with google hangout on air and will 
 
 ### Tips and Traps
 
-1. As a host and recorder, if someone is sharing his/her screen, it's better for you to present that shared screen to everyone and hide the bottom participants row.
-2. You need to find that shared screen in the bottom row as shown in the screen shot below and select to present it to everyone.
+* As a host and recorder, if someone is sharing his/her screen, it's better for you to present that shared screen to everyone and hide the bottom participants row.
+* You need to find that shared screen in the bottom row as shown in the screen shot below and select to present it to everyone.
 
 ![hangout screenshot1](hangout01.jpeg)
 
-3. Then you can click the leftmost button in the top menu bar to hide all participants bottom row shown in screen shot below.
+* Then you can click the leftmost button in the top menu bar to hide all participants bottom row shown in screen shot below.
 
 ![hangout screenshot2](hangout02.jpeg)
 
-4. Please to remember to switch to another shared screen if one speaker finishes and we switch to another speaker.
+* Please to remember to switch to another shared screen if one speaker finishes and we switch to another speaker.
