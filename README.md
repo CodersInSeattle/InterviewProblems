@@ -1,72 +1,13 @@
-Topics
-----
-* Trees
-  * Binary Tree
-  * Binary Search Trees
-  * Self-balancing BSTs and TreeMap
-  * Heaps
-  * Disjoint Sets and Union Find
+## Seattle Algorithm Discussion Group
 
-* Linear Data Structures
-  * Arrays
-  * Linked Lists
-  * Stacks and Queues
+### Topics
 
-* Hashing
-  * HashSet
-  * HashMap
-  * Bloom Filters
+See [Topics](Topics.md).
 
-* Graphs
-  * Graph Representations
-  * Graph Traversals
-  * Topological Sort
-  * Shortest Path Algorithms
-  * Minimal Spanning Tree
+### Schedule
 
-* Sorting
-  * O(n^2) Algorithms
-  * Quick Sort and Merge Sort
-  * Heap Sort
-  * Linear Sorting Algorithms
-  * External Sorting
+We meet every Sunday 2 pm PST via google hangout and/or at a local library meeting room.
 
-* Strings
-  * Ascii vs Unicode
-  * Prefix Trees
-  * String Matching: Robin-Karp and KMP
-  * Ternary Search Trees
-  * Suffix Arrays
+### Google+ Community
 
-* Algorithmic Paradigms
-  * Divide and Conquer
-  * Backtracking and Recursion
-  * Greedy Algorithms
-  * Dynamic Programming/Memoization
-
-* Misc Techniques:
-  * Binary Search
-  * Two Pointer
-  * Bit Manipulation
-
-* Advanced Topics in Trees
-  * Treaps
-  * Skip Lists
-  * Segment Tree and Binary Indexed Trees
-  * Threaded Binary Trees
-  * Fibonacci Heaps
-  * Binomial Heaps
-  * Cartesian Trees
-  * Order-static Trees
-  * Interval Trees
-  * K-D Trees
-
-* Advanced Topics
-  * NP-complete Problems
-  * Approximate Algorithms
-  * Randomized Algorithms
-
-* Other Types of Problems
-  * Medians and Order Statistics
-  * Palindrome-related
-  * Game Theory
+We have a private google+ community where we post past weekly meeting recordings. New members have to present at least once on our meetings to get invited. Existing members have to present at least once per 3 months to stay in the community.
