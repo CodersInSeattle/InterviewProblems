@@ -1,7 +1,6 @@
 ## Seattle Algorithm Discussion Group
 
-Builds:
-stonemary - [![Build Status](https://travis-ci.org/stonemary/InterviewProblems.svg?branch=master)](https://travis-ci.org/stonemary/InterviewProblems)
+- fork(stonemary) [![Build Status](https://travis-ci.org/stonemary/InterviewProblems.svg?branch=master)](https://travis-ci.org/stonemary/InterviewProblems)
 
 ### Topics
 
