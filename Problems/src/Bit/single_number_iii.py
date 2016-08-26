@@ -1,14 +1,17 @@
 import operator
 import functools
 
+
 class Solution(object):
-    def singleNumber(self, nums):
+
+    @staticmethod
+    def single_number(nums):
         """
         :type nums: List[int]
         :rtype: List[int]
         """
-        all = functools.reduce(operator.xor, nums)
-        mask = all ^ (all & (all - 1))
+        all_xor = functools.reduce(operator.xor, nums)
+        mask = all_xor ^ (all_xor & (all_xor - 1))
         yes = no = 0
         for x in nums:
             if mask & x:
@@ -18,4 +21,4 @@ class Solution(object):
         return [yes, no]
 
 
-print Solution().singleNumber([1,2,1,2,3,4])
+print(Solution.single_number([1, 2, 1, 2, 3, 4]))

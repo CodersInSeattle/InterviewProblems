@@ -1,4 +1,4 @@
-
+"""
 NUMS = [1, 2, 3, 2, 3, 1, 4, 4, 9]
 1 ^ 2 ^ 3 ^ 2 ^ 3 = 1 ^ (2 ^ 2) ^ (3 ^ 3) = 1 ^ 0 ^ 0 = 1
 
@@ -10,6 +10,11 @@ x ^ x = 0
 XOR everything:  1 ^ 4 = 101 (identifier)
 group1: [5, 2, 3, 2, 3,0] => 1
 group2: [4] => 4
+
+"""
+
+import operator
+import functools
 
 
 def single_number_map(nums):
@@ -43,8 +48,9 @@ def single_number_sort(nums):
         else:
             nums[i]
 
+
 def single_number_bit(nums):
-    return reduce(?, nums)
+    return functools.reduce(operator.xor, nums)
 
 
 
