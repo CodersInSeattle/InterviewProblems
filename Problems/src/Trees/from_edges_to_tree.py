@@ -36,7 +36,7 @@ class FindRoot(object):
         for parent, child in self.list_of_edges:
             is_child[parent] = is_child[parent]
             is_child[child] = True
-        for node, is_a_child in is_child.iteritems():
+        for node, is_a_child in is_child.items():
             if not is_a_child:
                 return node
 
@@ -58,7 +58,7 @@ class FindLeaves(object):
         for parent, child in self.list_of_edges:
             is_parent[parent] = True
             is_parent[child] = is_parent[child]
-        leaves = {node for node, is_a_parent in is_parent.iteritems()
+        leaves = {node for node, is_a_parent in is_parent.items()
                   if not is_a_parent}
         return leaves
 
@@ -77,7 +77,7 @@ class TreePrinter(object):
 
     def find_root(self):
         candidates = set(self.nodes_to_children.keys())
-        for children in self.nodes_to_children.itervalues():
+        for children in self.nodes_to_children.values():
             for child in children:
                 candidates.discard(child)
         return candidates.pop()
@@ -87,7 +87,7 @@ class TreePrinter(object):
         stack = [(root, 0)]
         while stack:
             current_node, current_level = stack.pop()
-            print '  ' * current_level + current_node
+            print('  ' * current_level + current_node)
             for child in reversed(self.nodes_to_children[current_node]):
                 stack.append((child, current_level + 1))
 
@@ -116,7 +116,7 @@ class TreePrinter(object):
             if current_level > 0 and current_level != prev_level:
                 print
                 prev_level = current_level
-            print current_node,
+            print(current_node),
             for child in self.nodes_to_children[current_node]:
                 queue.append((child, current_level + 1))
 
@@ -132,7 +132,7 @@ class TreePrinter(object):
 
 
 def _print_level(nodes_in_same_level):
-    print ' '.join(nodes_in_same_level)
+    print(' '.join(nodes_in_same_level))
 
 
 def _populate_children(list_of_edges):

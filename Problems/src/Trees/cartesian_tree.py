@@ -52,6 +52,6 @@ def build_cartesian_tree(array_of_nums):
 
 
 nums = [9, 3, 7, 1, 8, 12, 10, 20, 15, 18, 5]
-print get_left_neighbors(nums)
-print get_right_neighbors(nums)
-print build_cartesian_tree(nums)
+print(get_left_neighbors(nums))
+print(get_right_neighbors(nums))
+print(build_cartesian_tree(nums))
