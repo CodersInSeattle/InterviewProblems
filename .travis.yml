@@ -6,11 +6,15 @@ python:
   - "3.5"
 install: 
   - pip install -r requirements.txt
-  - pip install pylint
-  - pip install pep8
 before_script:
   export PYTHONPATH=$PYTHONPATH:$(pwd)
 script: py.test
 notifications:
   slack: codersinseattle:L8aWZy7IaXkKG9zTAumR46DO
-
+  email:
+    recipients:
+      - yukuairoy@gmail.com
+      - stonary.henary@gmail.com
+      - zhzexi@gmail.com
+    on_success: change
+    on_failure: always
