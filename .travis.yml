@@ -4,7 +4,10 @@ python:
   - "3.3"
   - "3.4"
   - "3.5"
-install: "pip install -r requirements.txt"
+install: 
+  - pip install -r requirements.txt
+  - pip install pylint
+  - pip install pep8
 before_script:
   export PYTHONPATH=$PYTHONPATH:$(pwd)
 script: py.test
