@@ -11,4 +11,6 @@ install:
 before_script:
   export PYTHONPATH=$PYTHONPATH:$(pwd)
 script: py.test
+notifications:
+  slack: codersinseattle:L8aWZy7IaXkKG9zTAumR46DO
 
