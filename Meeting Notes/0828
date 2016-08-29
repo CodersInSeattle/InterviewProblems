@@ -1,0 +1,26 @@
+1. [flattenArray] Given a json array, please flatten it to 1 level.
+"""
+var input = [1, {a: [2, [3]]}, 4, [5, [6]], [[7, ['hi']], 8, 9], 10];
+var output = [1, {a: [2, [3]]}, 4, 5, 6, 7, 'hi', 8, 9, 10];
+"""
+//		[1, {a: [2, [3]]}, 4, [5, [6]], [[7, ['hi']], 8, 9], 10]
+//	1  {a: [2, [3]]}	4	[5, [6]]          [[7, ['hi']], 8, 9]   10
+//							        5     [6]       [7, ['hi']]  8    9
+//									             6     7       ['hi']
+//														                    'hi'
+
+
+
+
+2.[findMinGap] Give a bunch of transactions, find the minimum gap of saling time for two products
+arr = [Transaction("iWatch", "2016/05/01"),
+Transaction("iPhone", "2016/01/08"),
+Transaction("phone case", "2016/01/10"),
+Transaction("laptop", "2016/01/05"),
+Transaction("iPhone", "2016/01/02"),
+Transaction("phone case", "2016/01/05"),
+Transaction("glass", "2016/01/01")
+]
+
+print getMin("iPhone", "phone case") -> 2
+print getMin("glass", "phone case") -> 4
