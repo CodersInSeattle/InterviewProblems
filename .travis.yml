@@ -18,3 +18,4 @@ notifications:
       - zhzexi@gmail.com
     on_success: change
     on_failure: always
+  slack: codersinseattle:L8aWZy7IaXkKG9zTAumR46DO
