@@ -1,6 +1,6 @@
 ## Seattle Algorithm Discussion Group
 
-- main [![Build Status](https://travis-ci.org/CodersInSeattle/InterviewProblems.svg?branch=pr%2F1)](https://travis-ci.org/CodersInSeattle/InterviewProblems)
+- main [![Build Status](https://travis-ci.org/CodersInSeattle/InterviewProblems.svg?branch=master)](https://travis-ci.org/CodersInSeattle/InterviewProblems)
 - fork(stonemary) [![Build Status](https://travis-ci.org/stonemary/InterviewProblems.svg?branch=master)](https://travis-ci.org/stonemary/InterviewProblems)
 
 ### Topics
