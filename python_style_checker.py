@@ -36,10 +36,13 @@ class PylintRunner(PythonStyleChecker):
         except subprocess.CalledProcessError as pylint_error:
             linter_message = pylint_error.output
             score_found = re.search(br'[-0-9]+\.\d{2}/10', linter_message)
-            score = score_found.group(0)
-            LOGGER.warning('%s failed PYLINT with score %s.',
-                           os.path.relpath(module), score)
-            self.failed += 1
+            if score_found is not None:
+                score = score_found.group(0)
+                LOGGER.warning('%s failed PYLINT with score %s.',
+                               os.path.relpath(module), score)
+                self.failed += 1
+            else:
+                LOGGER.warning(linter_message)
 
 
 class Pep8Runner(PythonStyleChecker):
