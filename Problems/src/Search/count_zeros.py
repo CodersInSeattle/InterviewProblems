@@ -6,6 +6,7 @@ Find the number of zeros in the matrix.
 
 
 def count_zeros(matrix):
+    """Returns the number of zeros in a matrix."""
     row_idx, col_idx = 0, len(matrix[0])-1
     result = 0
     while row_idx <= len(matrix)-1 and col_idx >= 0:
