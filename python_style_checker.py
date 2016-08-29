@@ -30,7 +30,7 @@ class PylintRunner(PythonStyleChecker):
     def check_style(self, module):
         '''Runs pylint on a Python module.'''
         try:
-            subprocess.check_output(['pylint', module])
+            subprocess.check_output([self.linter_name, module])
             LOGGER.debug('%s PASSED.', module)
             self.passed += 1
         except subprocess.CalledProcessError as pylint_error:
@@ -50,7 +50,7 @@ class Pep8Runner(PythonStyleChecker):
     def check_style(self, module):
         '''Runs pep8 on a Python module.'''
         try:
-            subprocess.check_output(['pep8', module])
+            subprocess.check_output([self.linter_name, module])
             LOGGER.debug('%s PASSED.', module)
             self.passed += 1
         except subprocess.CalledProcessError as pep8_error:
