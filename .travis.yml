@@ -11,3 +11,11 @@ before_script:
 script:
   - py.test
   - python check_style.py
+notifications:
+  email:
+    recipients:
+      - yukuairoy@gmail.com
+      - stonary.henary@gmail.com
+      - zhzexi@gmail.com
+    on_success: change
+    on_failure: always

@@ -1,4 +1,4 @@
 py==1.4.31
 pytest==3.0.1
-pep8
-pylint
+pylint==1.6.4
+pep8==1.7.0
