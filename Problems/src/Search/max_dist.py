@@ -1,7 +1,10 @@
+"""Given an array `A`, find the maximum `j - i` such that `A[j] > A[i]`."""
+
 from collections import deque
 
 
 def max_dist(nums):
+    """Returns the maximum j-i such that nums[j] > nums[i]."""
     if not nums:
         return -1
     left_indices = _find_possible_left_indices(nums)
@@ -38,11 +41,3 @@ def _find_possible_right_indices(nums):
             result_reversed.append(j)
             current_max = num
     return result_reversed
-
-
-print max_dist([])
-print max_dist([34, 8, 10, 3, 2, 80, 30, 33, 1])
-print max_dist([9, 7, 3, 1, 10, 2, 8, 6, 5])
-print max_dist([5, 4, 3, 2, 1])
-print max_dist([1, 2, 3, 4, 5])
-print max_dist([9, 2, 3, 4, 5, 6, 7, 8, 18, 0])

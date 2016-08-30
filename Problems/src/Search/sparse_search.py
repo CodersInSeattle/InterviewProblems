@@ -1,10 +1,12 @@
+"""Finds the index of target in list_of_strings."""
+
 def search_for_string(list_of_strings, target):
-    '''Finds the index of target in list_of_strings.
+    """Finds the index of target in list_of_strings which is sorted.
 
     This methods assumes that
         1) target != ''
         2) target is guaranteed to exist in list_of_strings
-    '''
+    """
     if not list_of_strings:
         return -1
     left, right = 0, len(list_of_strings) - 1
