@@ -39,16 +39,4 @@ public class Skyline {
         }
         return map;
     }
-    class HeightComparator implements Comparator<int[]> {
-        @Override 
-        public int compare(int[] a, int[] b) {
-            if (b[2] > a[2]) {
-                return 1;
-            } else if (b[2] < a[2]) {
-                return -1;
-            } else {
-                return 0;
-            }
-        }
-    }
 }
