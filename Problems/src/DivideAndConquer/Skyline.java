@@ -6,7 +6,7 @@ import java.util.*;
  */
 public class Skyline {
     public List<int[]> getSkyline(int[][] buildings) {
-        final Map<Integer, List<int[]>> map = flattern(buildings);
+        final Map<Integer, List<int[]>> map = flatten(buildings);
         final Queue<int[]> heap = new PriorityQueue<>((a, b) -> ((Integer)b[2]).compareTo(a[2]));
         final List<int[]> ans = new ArrayList<>();
         
@@ -28,7 +28,7 @@ public class Skyline {
         }
         return ans;
     }
-    private Map<Integer, List<int[]>> flattern(int buildings[][]) {
+    private Map<Integer, List<int[]>> flatten(int buildings[][]) {
         Map<Integer, List<int[]>> map = new HashMap<>();
         
         for (int[] building : buildings) {
