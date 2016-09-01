@@ -12,6 +12,7 @@ script:
   - py.test
   - python check_style.py
 notifications:
+  slack: codersinseattle:L8aWZy7IaXkKG9zTAumR46DO
   email:
     recipients:
       - yukuairoy@gmail.com
