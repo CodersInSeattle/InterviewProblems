@@ -4,7 +4,7 @@ import math
 import bit
 
 
-RANDOM_TEST_ITERATION = 10
+RANDOM_TEST_ITERATION = 5
 
 
 class TestBitCount(object):
