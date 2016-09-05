@@ -7,7 +7,7 @@ python:
 install:
   - pip install -r requirements.txt
 before_script:
-  export PYTHONPATH=$PYTHONPATH:$(pwd)
+  export PYTHONPATH=$(pwd)
 script:
   - py.test
   - python check_style.py leetcode
