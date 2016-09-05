@@ -1,6 +1,6 @@
 import unittest
 
-import binary_tree
+from Problems.trees import binary_tree
 
 
 THREE = binary_tree.BinaryTreeNode(3)
