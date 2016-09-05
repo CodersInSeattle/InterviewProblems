@@ -10,7 +10,7 @@ before_script:
   export PYTHONPATH=$PYTHONPATH:$(pwd)
 script:
   - py.test
-  - python check_style.py
+  - python check_style.py leetcode
 notifications:
   slack: codersinseattle:L8aWZy7IaXkKG9zTAumR46DO
   email:
