@@ -1,4 +1,4 @@
-import binary_tree
+from InterviewProblems.problems.trees import binary_tree
 
 
 class BinarySearchTreeNode(binary_tree.BinaryTreeNode):

@@ -1,6 +1,6 @@
 import unittest
 
-import binary_search_tree
+from InterviewProblems.problems.trees import binary_tree
 
 
 SEVENTEEN = binary_search_tree.BinarySearchTreeNode(17)
