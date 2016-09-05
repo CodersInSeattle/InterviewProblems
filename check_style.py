@@ -1,15 +1,52 @@
 import os
+import subprocess
 import sys
-
-import python_style_checker
 
 
 class ImproperStyleError(Exception):
     pass
 
 
-LINTERS = [python_style_checker.PylintRunner(),
-           python_style_checker.Pep8Runner()]
+class PythonStyleChecker(object):
+    def __init__(self, linter_name):
+        self.passed = 0
+        self.failed = set()
+        self._linter_name = linter_name
+
+    @property
+    def linter_name(self):
+        return self._linter_name
+
+    def check_style(self, module):
+        raise NotImplementedError
+
+
+class PylintRunner(PythonStyleChecker):
+
+    def __init__(self):
+        super(PylintRunner, self).__init__('pylint')
+
+    def check_style(self, module):
+        '''Runs pylint on a Python module.'''
+        try:
+            subprocess.check_output([self.linter_name, module])
+            self.passed += 1
+        except subprocess.CalledProcessError:
+            self.failed.add(os.path.relpath(module))
+
+
+class Pep8Runner(PythonStyleChecker):
+
+    def __init__(self):
+        super(Pep8Runner, self).__init__('pep8')
+
+    def check_style(self, module):
+        '''Runs pep8 on a Python module.'''
+        try:
+            subprocess.check_output([self.linter_name, module])
+            self.passed += 1
+        except subprocess.CalledProcessError:
+            self.failed.add(os.path.relpath(module))
 
 
 def _get_starting_directory(args):
@@ -31,7 +68,7 @@ def _run_linter(base_directory, linter):
 
 def run_linters(base_directory):
     failed_modules = set()
-    for linter in LINTERS:
+    for linter in [PylintRunner(), Pep8Runner()]:
         failed = _run_linter(base_directory, linter)
         failed_modules.update(failed)
     return failed_modules
