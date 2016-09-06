@@ -8,6 +8,7 @@
 *.so
 *.javac
 *.pyc
+__pycache__/
 
 # Packages #
 ############
