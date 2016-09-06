@@ -1,10 +1,10 @@
 import random
 import math
 
-from Problems.src.Bit import bit
+from problems.bit import bit
 
 
-RANDOM_TEST_ITERATION = 10
+RANDOM_TEST_ITERATION = 5
 
 
 class TestBitCount(object):

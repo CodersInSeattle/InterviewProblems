@@ -1,6 +1,6 @@
 import unittest
 
-from Problems.src.Trees import binary_search_tree
+from problems.trees import binary_search_tree
 
 
 SEVENTEEN = binary_search_tree.BinarySearchTreeNode(17)
@@ -40,17 +40,6 @@ class BinarySearchTreeTestCase(unittest.TestCase):
     def test_lowest_common_ancestor_same_side(self):
         lca = self.tree.lowest_common_ancestor(SEVEN, THIRTEEN)
         self.assertEqual(lca, SEVEN)
-
-    # def test_contains_subtree_exists(self):
-    #     self.assertTrue(self.tree.contains_subtree(FIVE))
-
-    # def test_contains_subtree_wrong_children(self):
-    #     some_node = binary_tree.BinaryTreeNode('2')
-    #     self.assertFalse(self.tree.contains_subtree(some_node))
-
-    # def test_paths_with_sum(self):
-    #     paths_sum_up_to_12 = self.tree.paths_with_sum(12)
-    #     self.assertEqual([[SEVEN, TWO, THREE]], paths_sum_up_to_12)
 
 
 if __name__ == '__main__':

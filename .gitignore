@@ -8,6 +8,7 @@
 *.so
 *.javac
 *.pyc
+__pycache__/
 
 # Packages #
 ############
@@ -37,3 +38,4 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+.idea/*
