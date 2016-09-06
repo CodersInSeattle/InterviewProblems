@@ -9,7 +9,9 @@ install:
 before_script:
   export PYTHONPATH=$(pwd)
 script:
-  - py.test
+  - echo $PYTHONPATH
+  - echo `pwd`
+  - echo `pwd`; py.test
   - python check_style.py leetcode
 notifications:
   slack: codersinseattle:L8aWZy7IaXkKG9zTAumR46DO

@@ -1,7 +1,7 @@
 import random
 import math
 
-from Problems.bit import bit
+from problems.bit import bit
 
 
 RANDOM_TEST_ITERATION = 5
